@@ -1,0 +1,19 @@
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    display: block;
+}
+
+.sub-dropdown {
+    visibility: hidden;
+    display: none;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 0 35px;
+    transition: 0.3s;
+}
+
+.sub-menu:hover .sub-dropdown {
+    visibility: visible;
+    display: flex;
+}

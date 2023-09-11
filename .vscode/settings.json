@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1ac62ffe-f635-4ed3-85d9-993e5c29cfbc/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/avontik",
+    "appService.deploySubpath": "."
+}

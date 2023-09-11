@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="310x310" href="assets/images/ms-icon-310x310.png">
+
+    <title>Avontik International: Access to Indian Handicrafts</title>
+
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://www.avontikinternational.com" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Avontik International" />
+    <meta property="og:description"
+        content="We Design, Manufacture, & Export Indian Handicraft Products to Anyone, Anywhere in World. We are the community of small manufacturers and exporter of beautifully designed Indian Handicraft Products. Indian Handicraft Products are widely appreciated around the world for their simplicity and toughness." />
+    <meta property="og:url" content="https://www.avontikinternational.com" />
+    <meta property="og:site_name" content="Avontik International" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/banner.png">
+    <meta property="og:image:secure_url" content="assets/images/banner.png" />
+    <meta property="og:image:width" content="1350" />
+    <meta property="og:image:height" content="1350" />
+    <meta name="twitter:description"
+        content="We Design, Manufacture, & Export Indian Handicraft Products to Anyone, Anywhere in World. We are the community of small manufacturers and exporter of beautifully designed Indian Handicraft Products. Indian Handicraft Products are widely appreciated around the world for their simplicity and toughness.">
+    <meta name="twitter:image" content="assets/images/banner.png">
+    <meta name="description"
+        content="We Design, Manufacture, & Export Indian Handicraft Products to Anyone, Anywhere in World. We are the community of small manufacturers and exporter of beautifully designed Indian Handicraft Products. Indian Handicraft Products are widely appreciated around the world for their simplicity and toughness.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Avontik International">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <!-- <link rel="stylesheet" href="assets/css/testimonials.scss"> -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/avontik.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <!-- ASO -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <!-- Avontik Internationals-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-210944388-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-210944388-1');
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <style>
+        .capt {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .capt #image {
+            background-color: #fff;
+            padding: 8px 20px;
+            font-size: 20px;
+            text-decoration: line-through solid 2px rgb(68, 68, 68);
+            margin-left: 8px;
+            width: 100px;
+            height: 40px;
+            line-height: 1.2;
+            user-select: none;
+        }
+
+        #user-input {
+            margin-top: 10px;
+            display: flex;
+        }
+
+        .loading-popup{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+        }
+
+        .loader {
+            max-width: 300px;
+            height: 150px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .loader p {
+            font-size: 20px;
+        }
+
+        .loader-box {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .loader-box span {
+            background-color: #6afe;
+            width: 10px;
+            height: 10px;
+        }
+
+        .loader-box span:nth-child(1) {
+            animation: loading 0.5s linear 0s infinite alternate;
+        }
+
+        .loader-box span:nth-child(2) {
+            animation: loading 0.5s linear 0.5s infinite alternate;
+        }
+
+        .loader-box span:nth-child(3) {
+            animation: loading 0.5s linear 1s infinite alternate;
+        }
+
+        .loader-box span:nth-child(4) {
+            animation: loading 0.5s linear 1.5s infinite alternate;
+        }
+
+        .loader-box span:nth-child(5) {
+            animation: loading 0.5s linear 2s infinite alternate;
+        }
+
+        @keyframes loading {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0.25;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            75% {
+                opacity: 0.75;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body onload="generate()">
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Loading Popup ***** -->
+    <div class="container-fluid loading-popup" id="loading-popup">
+        <div class='loader'>
+            <p>Submitting your response</p>
+            <div class="loader-box">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <ul class="left-info">
+                        <li><a href=""><i class="fa fa-clock-o"></i>24 x 7</a></li>
+                        <li><a href="tel:+917581969594"><i class="fa fa-phone"></i>+91 7581969594</a></li>
+                        <li><a href="mailto:info@avontikinternational.com"><i
+                                    class="fa fa-envelope"></i>info@avontikinternational.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="right-icons">
+                        <li><a rel="nofollow" href="https://fb.com/avontikinternational" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/avontikint" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/company/avontik-international/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://instagram.com/avontikinternational" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex flex-row align-items-center" href="index.html">
+                    <img src="assets/images/logo.svg" class="d-inline" alt="Avontik Logo">
+                    <h2>Avontik International</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="certificate.html">Certificates</a>
+                        </li>
+                        <li class="nav-item dropdown" id="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <!-- <li class="sub-menu"><a class="dropdown-item dropdown-toggle" hidden> &#9758; Agro
+                                        Products</a>
+                                    <ul class="sub-dropdown">
+                                        <li><a href="agroproducts.html#fruits"> &bullet; Fruits</a></li>
+                                        <li><a href="agroproducts.html#vegetables"> &bull; Vegetables</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu"><a class="dropdown-item dropdown-toggle"> &#9758; Leather
+                                        Products</a>
+                                    <ul class="sub-dropdown">
+                                        <li><a href="leatherproducts.html#leatherbags"> &bull; Leather Bags</a>
+                                        </li>
+                                        <li><a href="leatherproducts.html#leatherbelts"> &bull; Leather
+                                                Belts</a></li>
+                                        <li><a href="leatherproducts.html#leatherdogacc"> &bull; Leather Dog
+                                                Accessories</a></li>
+                                        <li><a href="leatherproducts.html#leatherjackets"> &bull; Leather
+                                                Jackets</a></li>
+                                        <li><a href="leatherproducts.html#leathertechacc"> &bull; Leather Tech
+                                                Accessories</a></li>
+                                        <li><a href="leatherproducts.html#leatherwallets"> &bull; Leather
+                                                Wallets</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="clayarticle.html"> &#9758; Handmade Clay
+                                        Article</a></li> -->
+                                <li><a class="dropdown-item" href="products/copperarticle.html"> &#9758; Copper
+                                        Products</a></li>
+                                <li><a class="dropdown-item" href="products/juteproduct.html"> &#9758; Jute Product</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <svg style="margin-top: -19px; width: 100%; box-shadow: inset 0px 10px 5px 0px grey;"
+            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" height="15.292px" viewBox="0 0 2560 15.292"
+            enable-background="new 0 0 2560 15.292">
+            <polygon fill="#ffff" points="0,0 0,7 16.695,13.999 34.905,7 53.999,13.999 71.704,7 89.946,13.999 107.998,7 126.745,13.999
+			144.86,7 163.102,13.999 181.123,7 199.964,13.843 218.048,7 236.384,13.999 254.783,7 273.656,13.999 291.835,7 310.076,13.999
+			328.287,7 346.812,13.999 365.085,7 383.201,13.999 400.938,7 420.41,13.999 438.21,7 456.388,13.999 474.851,7 493.25,13.999
+			510.956,7 530.175,13.999 548.322,7 566.469,13.999 584.301,7 603.047,13.999 620.973,7 639.436,13.999 657.898,7 676.487,13.999
+			694.76,7 713.002,13.999 731.118,7 749.643,13.999 767.917,7 786.158,13.999 804.147,7 822.515,13.999 841.167,7 859.314,13.999
+			878.061,7 896.681,13.999 914.386,7 932.533,13.999 951.216,7 970.026,13.999 988.079,7 1006.194,13.999 1024.436,7 1043.15,13.999
+			1061.329,7 1079.476,13.999 1097.623,7 1115.77,13.999 1134.043,7 1152.758,13.999 1170.306,7 1189.431,13.999 1207.672,7
+			1225.819,13.999 1244.503,7 1261.798,13.999 1279.913,7 1298.565,13.843 1316.712,7 1334.985,13.999 1353.101,7 1371.753,13.999
+			1389.868,7 1408.299,13.999 1425.783,7 1444.94,13.999 1463.276,7 1481.329,13.999 1499.57,7 1518.885,13.999 1537.032,7
+			1555.147,13.999 1573.326,7 1591.946,13.999 1609.651,7 1628.24,13.999 1645.883,7 1664.724,13.999 1682.808,7 1701.08,13.999
+			1719.67,7 1738.006,13.999 1755.963,7 1775.152,13.999 1792.825,7 1811.099,13.999 1828.867,7 1847.961,13.999 1865.949,7
+			1884.317,13.999 1902.938,7 1921.021,13.999 1939.043,7 1955.738,13.999 1973.947,7 1993.041,13.999 2010.746,7 2028.988,13.999
+			2047.041,7 2065.787,13.999 2083.902,7 2102.145,13.999 2120.165,7 2139.006,13.843 2157.09,7 2175.427,13.999 2193.826,7
+			2212.699,13.999 2230.877,7 2249.119,13.999 2267.329,7 2285.854,13.999 2304.128,7 2322.243,13.999 2339.98,7 2359.452,13.999
+			2377.252,7 2395.431,13.999 2413.894,7 2432.293,13.999 2449.998,7 2469.218,13.999 2487.365,7 2505.512,13.999 2523.344,7
+			2542.09,13.999 2560,7.006 2560,0 "></polygon>
+        </svg>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+            <!-- Item -->
+            <div class="item item-1">
+                <div class="img-fill">
+                    <div class="overlay">
+                    </div>
+                    <div class="text-content">
+                        <!-- <h6>Acess to Indian Handicrafts2</h6> -->
+                        <h4 class="fadeInUp" style="animation-delay: 0;">Buy Indian Handicraft Products From
+                            Manufacturer Itself.</h4>
+                        <p class="" style="font-size: 14pt;">Getting Authentic Indian Handicraft Products are hard, we
+                            get it !
+                            <br> That's why we built a community of small Manufacturer across India. <br> A supply chain
+                            system that works from their home to your customer's home.
+                        </p>
+                        <p><a href="#my-prod" class="filled-button">Show Me My Products</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- // Item -->
+            <!-- Item -->
+            <div class="item item-2">
+                <div class="img-fill">
+                    <div class="overlay">
+                    </div>
+                    <div class="text-content">
+                        <!-- <h6>Acess to Indian Handicrafts2</h6> -->
+                        <div class="" data-aos="fade-up">
+                            <h4 data-aos="fade-up">Exporting Made in India products to anyone, anywhere.</h4>
+                        </div>
+                        <p style="font-size: 14pt;">Feel the real touch and speciality of India with Ease and Fast
+                            Service of Avontik International. <br> Connect, Observe and buy Products people need and
+                            Businesses Customer's love.<br> We Pack and Ship Orders Quickly.
+                        </p>
+                        <p><a href="#my-prod" class="filled-button">Show Me My Products</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- // Item -->
+            <!-- Item -->
+            <div class="item item-3">
+                <div class="img-fill">
+                    <div class="overlay">
+                    </div>
+                    <div class="text-content">
+                        <!-- <h6>Acess to Indian Handicrafts2</h6> -->
+                        <h4>Get Indian Handicraft Products straight to your country.</h4>
+                        <p style="font-size: 14pt;">Buy Indian Handicraft Products from an industry leading Export
+                            Company working, <br> specially to fulfill the need of your's like hardworking Importers and
+                            Suppliers. <br> Alone we can do so little, together we can do so much.
+                        </p>
+                        <p><a href="#my-prod" class="filled-button">Show Me My Products</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+
+    <div class="need d-flex align-items-center justify-content-center">
+        <div class="container-fluid d-flex flex-row row align-items-center justify-content-center"
+            style="margin-top: 65px;">
+            <div class="img-box col-lg-5 col-sm-12">
+                <img src="assets/images/bg (2).jpg" alt="" style="width: 100% ; object-fit: cover;">
+            </div>
+            <div class="question col-lg-5 col-sm-12">
+                <h2><span style=" color: #a55e3f; font-size: 1em; ">Need Great Indian Handicraft Products</span> but
+                    cannot find an Exporter?</h2>
+                <p class=" mt-5 " style=" text-align: justify; color: black; font-weight: bolder;">
+                    <i>No worries, we're here to help you.</i> <br><br> We've created a community and a supply chain
+                    system with 11 States and more than 30 small Manufacturer of Handicraft Products across India.
+                    <br> <br> Every State has its own speciality of techniques, color and usage that's making Avontik
+                    International a hub of Unique Indian Handicraft Products. <br><br> Our products are packed with
+                    diversity and culture of India.
+                </p>
+            </div>
+            <center class="mt-5 ">
+
+                <img src="assets/images/did-you-know-removebg-preview.png " alt=" " width="300">
+            </center>
+        </div>
+    </div>
+    <div class="services">
+        <div class="title" id="my-prod">
+            <h2>Our Ready to <span>Export Products</span></h2>
+            <h3>Sending you the love of India with the Art of India</h3>
+        </div>
+
+
+        <div class="container">
+            <div class="imgBx">
+                <img src="assets/images/CSH1.jpg" alt="Nike Jordan Proto-Lyte Image">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Copper Products<br>
+                        <span>By Avontik International</span>
+                    </h2>
+                    <p>
+                        We manufacture copper products by keeping both antique simplicity and luxurious quality of it.
+                        We have expertise in sourcing the choicest of pure copper from all around India and distributing
+                        it across the length and breadth of World.
+                    </p>
+                    <a href="products/copperarticle.html"><button>Explore</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="imgBx imgBx2">
+                <img src="assets/images/Jute_home.jpg" alt="Nike Jordan Proto-Lyte Image">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Jute Products<br>
+                        <span>By Avontik International</span>
+                    </h2>
+                    <p>
+                        India is very well known for it's culture, crafts and these Jute products.We manufacture it by
+                        using different varieties of design. Jute products are very popular around the world for their
+                        beauty and utility. Explore and get the real touch of India with Avontik.
+                    </p>
+                    <a href="products/juteproduct.html"><button>Explore</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class=" wrapper ">
+            <div class=" product-img ">
+                <img src="assets/images/copper_home.jpg" height=" 420 " width=" 327 ">
+            </div>
+            <div class=" product-info ">
+                <div class=" product-text ">
+                    <h1>Copper Products</h1>
+                    <h2>by Avontik International</h2>
+                    <p>We manufacture copper products by keeping both antique simplicity and luxurious quality of it.
+                        We have expertise in sourcing the choicest of pure copper from all around India and distributing it across the length and breadth of World.</p>
+                </div>
+                <div class=" product-price-btn ">
+                    <button type=" button "><a href="products/copperarticle.html" style="color: white;">Explore</a></button>
+                </div>
+            </div>
+        </div>
+        <div class=" wrapper ">
+            <div class=" product-info ">
+                <div class=" product-text ">
+                    <h1>Jute Products</h1>
+                    <h2>by Avontik International</h2>
+                    <p>India is very well known for it's culture, crafts and these Jute products.We manufacture it by using different varieties of design. Jute products are very popular around the world for their beauty and utility. Explore and get the real touch of India with Avontik. </p>
+                </div>
+                <div class=" product-price-btn ">
+                    <button type=" button ">Explore</button>
+                </div>
+            </div>
+            <div class=" product-img ">
+                <img src=" https://cdn.shopify.com/s/files/1/2690/0106/files/IMG_6191.jpg?v=1632547270 " class=" r " height=" 420 " width=" 327 ">
+            </div>
+        </div> -->
+
+
+    </div>
+
+
+    <div class=" testimonials ">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" col-md-12 ">
+                    <div class=" section-heading ">
+                        <h2>This is why we do <em>what we do</em></h2>
+                        <span style="color: black; font-size: 1.3em;">For our business and mission to thrive long term,
+                            you need a clear, compelling reason to choose us, <b>Every Time.</b> <br>
+
+                            That's where The <b>People Have Spoken, More than just words.</b> </span>
+                    </div>
+                </div>
+                <div class=" main ">
+                    <div class=" slider ">
+
+                        <div class=" buttons ">
+                            <div class=" previous " onclick=" nextSlide() "></div>
+                            <div class=" next " onclick=" prevSlide() "></div>
+                        </div>
+
+                        <div class=" slide ">
+                            <div class=" testimonial ">
+                                <blockquote>" If the world is a stage and all the men and women are merely players then
+                                    <b style="font-weight: 600;">Avontik International is the stage of Indian Handicraft
+                                        Products and we are merely Importers</b> ". <br> Rather than
+                                    wandering here and there all over the Internet for Indian Handicrafts, <b
+                                        style="font-weight: 600;">I simply contact Avontik International and click
+                                        Import.</b>
+                                </blockquote>
+                                <p class=" author ">Adam Jenfro.
+                                    <span>Marketing Head - Pensively Overseas</span>
+                                </p>
+                            </div>
+
+                            <div class=" slider-img ">
+                                <img src="assets/images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt=" Author Image ">
+                            </div>
+
+                        </div>
+
+                        <div class=" slide ">
+                            <div class=" testimonial ">
+                                <blockquote>" I would just like to say once again <b style="font-weight: 600;">how happy
+                                        we were about finalizing and importing Indian Handicrafts from Avontik
+                                        International.</b> The extra time and effort you put in were certainly
+                                    worthwhile. It is a joy for us to work with such dedicated and talented individuals.
+                                    Rest assured if/when we need additional assistance in importing Indian Handicrafts.
+                                    <b style="font-weight: 600;">Avontik will be the first company we contact.</b>"
+                                </blockquote>
+                                <p class=" author ">Mariah L. Yu
+                                    <span>Sales Manager - Olympus International</span>
+                                </p>
+                            </div>
+
+                            <div class=" slider-img ">
+                                <img src="assets/images/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg"
+                                    alt=" Author Image ">
+                            </div>
+
+                        </div>
+
+                        <div class=" slide ">
+                            <div class=" testimonial ">
+                                <blockquote>" <b style="font-weight: 600;">Avontik International give a fantastic,
+                                        personal and responsive service.</b> No small detail is too much trouble. They
+                                    are excellent at keeping the customer informed of progress at all times
+                                    (without being asked!) and provide an efficient, friendly service which is great
+                                    value for money.<b style="font-weight: 600;"> We will use them again. </b> "
+                                </blockquote>
+                                <p class=" author ">Carrie Armitage
+                                    <span>CEO - Saffire Exim Limited</span>
+                                </p>
+                            </div>
+
+                            <div class=" slider-img ">
+                                <img src="assets/images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
+                                    alt=" Author Image ">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- <div class=" more-info ">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" col-md-12 ">
+                    <div class=" more-info-content ">
+                        <div class=" row ">
+                            <div class=" col-md-6 ">
+                                <div class=" left-image ">
+                                    <img src=" assets/images/Avontik-Logo.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class=" col-md-6 align-self-center ">
+                                <div class=" right-content ">
+                                    <span>Who we are</span>
+                                    <h2>Get to know about <em>Avontik International</em></h2>
+                                    <p><b>We are Avontik</b><br>
+ 
+                                        Providing You the Art Of India. <br>
+                                        
+                                        Our Purpose with Avontik is simple - To Provide Indian Handicraft Products to Anyone, Anywhere by choosing the possibilities in every Direction. <br>
+                                        
+                                        Avontik International is the leading Exporter and Manufacturer of Indian Handicraft Products. <br>
+                                         
+                                        A Community of Small Manufacturer from all across India ( 11 States and more than 30 Manufacturers ) whose aim is to deliver Authentic Indian Handicraft Products to the world. <br>
+                                        
+                                        From starting we knew that our customers are unique that's why we became too. <br>
+                                        
+                                        Too many Export Companies start with a big idea of providing and fulfilling the demand of Indian Handicraft Products to World and fail miserably because nobody wants to pay for their Products. <br><br>
+                                        
+                                        <b>What are they missing?</b> <br>
+                                        
+                                        The community driven approach of Avontik International.<br>
+                                        
+                                        Instead of direct finding and providing products to customers of your country or city who are totally unknown to us. We choose Importers and Suppliers like you, who knows and understand their Customers very well and establish a strong connection and a supply chain system with them. <br>
+                                        
+                                        We connect, observe and sell products people need and Businesses Customer's love.
+                                    </p>
+                                    <a href=" about.html#info " class=" filled-button ">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="about-section">
+
+        <div class=" container ">
+            <center>
+                <h2>Who we are?</h2> <br>
+                <h3>"In just three words we can sum up everything about us" </h3>
+            </center>
+            <div class=" row " style="margin-top: 60px; ">
+                <div class=" content-column col-lg-6 col-md-12 col-sm-12 order-2 aos-init aos-animate "
+                    data-aos=" fade-right " data-aos-duration=" 2000 ">
+                    <div class=" inner-column ">
+                        <div class=" sec-title ">
+                            <!-- <span class=" title ">About Company</span> -->
+                            <h2 style="text-transform: capitalize; font-weight: bolder; font-size: 2em; ">We are <span
+                                    style=" color: var(--main-color); ">AVONTIK</span></h2><b
+                                style="font-style: italic; ">Providing You the Art Of India. </b>
+                        </div>
+                        <div class=" text " style="color: black; text-align: justify; ">
+
+                            Our Purpose with Avontik is simple - <b> To Provide Indian Handicraft Products to Anyone,
+                                Anywhere by choosing the possibilities in every Direction.</b> <br><br> Avontik
+                            International is the leading Exporter and Manufacturer
+                            of Indian Handicraft Products. <br><br>
+
+                            <b>A Community of Small Manufacturer from all across India ( 11 States and more than 30
+                                Manufacturers )</b> whose aim is to deliver Authentic Indian Handicraft Products to the
+                            world. <br> From starting we knew that <b>our customers are unique that's why we became
+                                too.</b> <br><br> Too many Export Companies start with a big idea of providing and
+                            fulfilling the demand of Indian Handicraft Products to World and fail miserably because
+                            nobody wants to pay for their Products. <br><br>
+
+                            <b>What are they missing?</b> <br><br>
+
+                            <b>The community driven approach of Avontik International.</b><br><br> Instead of direct
+                            finding and providing products to customers of your country or city who
+                            are totally unknown to us. <b> We choose Importers and Suppliers like you,</b> who knows and
+                            understand their Customers very well and establish a strong connection and a supply chain
+                            system with them. <br><br>
+
+                            <b>We connect, observe and sell products people need and Businesses Customer's love.</b>
+                            </p>
+                        </div>
+
+                        <div class=" btn-box ">
+                            <a href=" about.html " class=" theme-btn btn-style-one ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Column -->
+                <div class=" image-column col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center aos-init aos-animate "
+                    data-aos=" fade-left " data-aos-duration=" 2000 ">
+                    <div class=" inner-column wow fadeInLeft ">
+                        <figure class=" image-1 ">
+                            <a href=" " class=" lightbox-image " data-fancybox=" images "><img
+                                    src="assets/images/handicraft2.jpg" alt=" webdevelopment "></a>
+                        </figure>
+                        <figure class=" image-2 ">
+                            <a href=" " class=" lightbox-image " data-fancybox=" images "><img
+                                    src="assets/images/handicraft.jpg" alt=" digitalmarketing "></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class=" storytelling d-flex">
+        <div class="container">
+            <div class="section">
+                <div class="col span_3_of_3">
+                    <div class="blog-post">
+                        <h1 class="blog-title">Hey, Fellow <b style=" color: #a55e3f;">Importers</b> and <b
+                                style=" color: #a55e3f;">Suppliers</b>!</h1> <br>
+                        <p class="blog-content">¬I'm <b>Yash</b>, the <b>Founder and Manager</b> of
+                            the Avontik International. For many years I was struggling to build a business around Indian
+                            Handicraft Products. <b>The Creation of an Export Company requires a Supply Chain System</b>
+                            within your country as well as across
+                            countries and it required lot of skills, hardship and patience like Captain America.
+                            <br><br> After 2 years of blood, sweat and tears I finally founded Avontik International
+                            along with my <b>Co-founder Prasoon.</b> <br><br>
+
+                            <b>Our mission with Avontik International is to help and provide Business to small
+                                Manufacturers of Indian Handicraft Products</b> and give them opportunities and
+                            community support where they can observe, participate and take
+                            the learnings and transform them into products people need. <br><br>
+
+                            <b>We believe Business can grow with a vision and succeed with Trust.</b> That's why we've
+                            created an ecosystem by uniting people, education, and Community to grow better Every day.
+                        </p><br>
+                        <a>Thanks for Reading.</a>
+                    </div>
+                </div>
+
+                <!-- <aside class="col span_1_of_3">
+                        <div class="side-post">
+                            <img src="assets/images/yashnagar1.jpg" alt="img">
+                            <p class="side-content">Come on down to Bunning's for a snag - Ad</p>
+                        </div>
+                    </aside> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" site-section bg-light " id=" whyus " style=" margin-top: 70px ">
+        <div class=" container p-4 ">
+            <div class=" row justify-content-center mb-5 ">
+                <div class=" col-md-7 text-center border-primary ">
+                    <h2 class=" " style=" color: #a55e3f; text-transform: uppercase; ">Why us?</h2>
+                    <p class=" color-black-opacity-5 font-weight-bold "
+                        style="font-weight: bolder; font-style: italic; color: black;">We're aware that you want
+                        compelling reasons to trust us. It's here !</p>
+                </div>
+            </div>
+            <div class=" row align-items-stretch ">
+                <div class=" col-md-6 col-lg-4 mb-4 mb-lg-4 ">
+                    <div class=" unit-4 d-flex ">
+                        <div class=" unit-4-icon mr-4 "><img src=" assets/images/safe.png "></div>
+                        <div>
+                            <h3>Authenticated</h3>
+                            <p>We authenticated by government of India. Trading with us is completely safe and legal.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-4 mb-4 mb-lg-4 ">
+                    <div class=" unit-4 d-flex ">
+                        <div class=" unit-4-icon mr-4 "><img src=" assets/images/trust.png "></div>
+                        <div>
+                            <h3>Trusted</h3>
+                            <p>We are trusted by our clients. Checkout testimonials.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-4 mb-4 mb-lg-4 ">
+                    <div class=" unit-4 d-flex ">
+                        <div class=" unit-4-icon mr-4 "><img src=" assets/images/reliability.png "></div>
+                        <div>
+                            <h3>Reliability</h3>
+                            <p>All our products are reliable and upto the mark.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" col-md-6 col-lg-4 mb-4 mb-lg-4 ">
+                    <div class=" unit-4 d-flex ">
+                        <div class=" unit-4-icon mr-4 "><img src=" assets/images/tag.png "></div>
+                        <div>
+                            <h3>Pricing</h3>
+                            <p>Pricing is the most important factor in trading. All our Products are fairly priced.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-4 mb-4 mb-lg-4 ">
+                    <div class=" unit-4 d-flex ">
+                        <div class=" unit-4-icon mr-4 "><img src=" assets/images/shield.png "></div>
+                        <div>
+                            <h3>Protection</h3>
+                            <p>We ensure that you got what you paid for. All our products are shipped with gentle and
+                                care.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-4 mb-4 mb-lg-4 ">
+                    <div class=" unit-4 d-flex ">
+                        <div class=" unit-4-icon mr-4 "><img src=" assets/images/medal.png "></div>
+                        <div>
+                            <h3>Achievements</h3>
+                            <p>We are the members at MSME, DGFT, IIM, etc</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" callback-form ">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" col-md-12 mb-4 ">
+                    <div class=" section-heading ">
+                        <h2>Request a <em>call back</em></h2>
+                        <span>You'll get to know more about us when you hit that send button. Connect tomorrow with
+                            today.</span>
+                    </div>
+                </div>
+                <div class=" col-md-12 ">
+                    <div class="contact-form">
+                        <form id="contact"
+                            action="https://script.google.com/macros/s/AKfycbxwxCK8DkbyS2BY_iUGOj_Vw8lAyofK2DaMBqrrm7-6C37SG_SKBowG813xQS74AxApEQ/exec"
+                            method="post">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name"
+                                            placeholder="Full Name" required=" ">
+                                    </fieldset>
+                                </div>
+                                <div class=" col-lg-4 col-md-12 col-sm-12 ">
+                                    <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email"
+                                            pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                                    </fieldset>
+                                </div>
+                                <div class=" col-lg-4 col-md-12 col-sm-12 ">
+                                    <fieldset>
+                                        <input name="subject" type="text" class="form-control" id="subject"
+                                            placeholder="Subject" required=" ">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message"
+                                            placeholder="Your Message" required=" "></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="captcha col-12 col-lg-6 d-flex flex-column align-content-start">
+                                    <div class='capt'>
+                                        <div id="image" class="inline" selectable="False">
+                                        </div>
+                                        <div class="inline" onclick="generate()">
+                                            <!-- <i class="fas-solid fa-arrows-rotate"></i> -->
+                                            <img src="assets/images/refresh.png" alt="refresh" width="40">
+                                        </div>
+                                    </div>
+
+                                    <div id="user-input" class="inline">
+                                        <input type="text" id="submit" placeholder="Captcha code" />
+                                    </div>
+
+                                    <p id="key"></p>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" name="submit" id="form-submit" class="border-button"
+                                            onclick="printmsg()">Send Message</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class=" partners my-0 ">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" col-md-12 ">
+                    <div class=" owl-partners owl-carousel ">
+
+                        <div class=" partner-item ">
+                            <img src=" assets/images/logo.png " title=" 1 " alt=" 1 ">
+                        </div>
+
+                        <div class=" partner-item ">
+                            <img src=" assets/images/logo3.jpg " title=" 2 " alt=" 2 ">
+                        </div>
+
+                        <div class=" partner-item ">
+                            <img src=" assets/images/logo2.png " style=" height: 85px " title=" 3 " alt=" 3 ">
+                        </div>
+
+                        <div class=" partner-item ">
+                            <img src=" assets/images/logo4.png " style=" width: 100px " title=" 4 " alt=" 4 ">
+                        </div>
+
+                        <div class=" partner-item ">
+                            <img src=" assets/images/client-01.png " title=" 5 " alt=" 5 ">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Footer Starts Here -->
+    <footer class="mt-5">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" col-md-4 footer-item ">
+                    <h4>Avontik International</h4>
+                    <p><i class=" fa fa-phone mx-3 "></i><a href=" tel:+91 7581969594 ">+91 7581969594</a></p>
+                    <a href=" mailto:info@avontikinternational.com?subject=We are intrested for your products "
+                        class=" db mb2 pb1 link hide-child gray3 hover-white ">
+                        <p><i class=" fa fa-envelope mx-3 "></i> info@avontikinternational.com</p>
+                    </a>
+                    <a href=" mailto:help@avontikinternational.com?subject=Help Regards Import export "
+                        class=" db mb2 pb1 link hide-child gray3 hover-white ">
+                        <p><i class=" fa fa-envelope mx-3 "></i> help@avontikinternational.com</p>
+                    </a>
+
+
+                    <ul class=" social-icons ">
+                        <li><a rel=" nofollow " href=" https://fb.com/avontikinternational " target=" _blank "><i
+                                    class=" fa fa-facebook "></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/avontikint" target=" _blank "><i
+                                    class=" fa fa-twitter "></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/avontik-international/" target="_blank"><i
+                                    class=" fa fa-linkedin "></i></a></li>
+                        <li><a href=" https://instagram.com/avontikinternational " target=" _blank "><i
+                                    class=" fa fa-instagram "></i></a></li>
+                    </ul>
+                </div>
+                <div class=" col-md-4 footer-item ">
+                    <h4>Useful Links</h4>
+                    <ul class=" menu-list ">
+                        <li><a href=" https://www.dgft.gov.in/CP/ " target=" _blank ">DIRECTORATE GENERAL OF
+                                FOREIGN TRADE (DGFT)</a></li>
+                        <li><a href=" https://www.icegate.gov.in/ " target=" _blank ">ICEGATE</a></li>
+                        <li><a href=" https://www.fieo.org/ " target=" _blank ">Federation of Indian Export
+                                Organisations
+                                (FIEO)</a></li>
+                        <li><a href=" https://jpdepc.org/ " target=" _blank ">Jute Products Development & Export
+                                Promotion Council</a></li>
+                        <li><a href=" https://www.epch.in/ " target=" _blank ">Export Promotion Council for Handicrafts:
+                                EPCH</a></li>
+
+                    </ul>
+                </div>
+                <div class=" col-md-4 footer-item ">
+                    <h4>Important Pages</h4>
+                    <ul class=" menu-list ">
+                        <li><a href="">Home</a></li>
+                        <li><a href="certificate.html">Certificate</a></li>
+                        <li><a href="products/copperarticle.html">Products - Copper Articles</a></li>
+                        <li><a href="proudcts/juteproduct.html">Products - Jute Bag</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Removed -->
+                <!-- <div class=" col-md-3 footer-item last-item ">
+                    <h4>Contact Us</h4>
+                    <div class="contact-form">
+                        <form id="contact footer-contact" action=" " method="POST" >
+                            <div class="row">
+                                <div class=" col-lg-12 col-md-12 col-sm-12 ">
+                                    <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required=" ">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                                    </fieldset>
+                                    <fieldset hidden>
+                                        <input name="subject" type="text" value="nil" class="form-control" id="subject" placeholder="Subject" required=" ">
+                                    </fieldset>
+                                </div>
+                                <div class=" col-lg-12 ">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=" "></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="g-recaptcha" data-sitekey="6LdgyaojAAAAALw4zZJeoMDO5R4evtJi-Ea3Y7wQ"></div>
+                                <div class=" col-lg-12 ">
+                                    <fieldset>
+                                        <button type="submit" name="submit" id="form-submit" class="filled-button">Send
+                                            Message</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </footer>
+
+    <div class=" sub-footer ">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" col-md-12 ">
+                    <p>Copyright &copy; 2021 Avontik International, LLP. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src=" vendor/jquery/jquery.min.js "></script>
+    <script src=" vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Additional Scripts -->
+    <script src=" assets/js/custom.js "></script>
+    <script src=" assets/js/owl.js "></script>
+    <script src=" assets/js/slick.js "></script>
+    <script src=" assets/js/accordions.js "></script>
+    <script src=" assets/js/sendmail.js "></script>
+    <!-- <script src=" assets/js/secure.js "></script> -->
+
+    <!-- <script language=" text/Javascript ">
+        
+    </script> -->
+
+</body>
+
+<script>
+    const next = document.querySelector(" .next ");
+    const prev = document.querySelector(" .previous ");
+    const slides = document.querySelectorAll(" .slide ");
+
+    let index = 0;
+    display(index);
+
+    function display(index) {
+        slides.forEach((slide) => {
+            slide.style.display = " none ";
+        });
+        slides[index].style.display = " flex ";
+    }
+
+    function nextSlide() {
+        index++;
+        if (index > slides.length - 1) {
+            index = 0;
+        }
+        display(index);
+    }
+
+    function prevSlide() {
+        index--;
+        if (index < 0) {
+            index = slides.length - 1;
+        }
+        display(index);
+    }
+
+    next.addEventListener(" click ", nextSlide);
+    prev.addEventListener(" click ", prevSlide);
+</script>
+
+<script src=" assets/js/try.js "></script>
+<script src="assets/js/captcha.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwxCK8DkbyS2BY_iUGOj_Vw8lAyofK2DaMBqrrm7-6C37SG_SKBowG813xQS74AxApEQ/exec'
+
+    const form = document.forms['contact']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => alert("Thank you! your form is submitted successfully."))
+            .then(() => { window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script>
+    // Page loading animation
+
+    $("#preloader").animate({
+        'opacity': '0'
+    }, 600, function () {
+        setTimeout(function () {
+            $("#preloader").css("visibility", "hidden").fadeOut();
+        }, 300);
+    });
+</script>
+
+</html>

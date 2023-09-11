@@ -1,0 +1,136 @@
+Body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    padding: 20px;
+    margin: 0;
+}
+
+.headerdiv{
+    background-color: #563d7c;
+    width: 510px;
+    font-size: large;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.maindiv {
+    width:510px;
+    height:26px;
+    padding: 4px;
+    box-sizing: border-box;
+    border-left: 1px solid #563d7c;
+    border-right: 1px solid #563d7c;
+}
+
+.divleft {
+    width: 200px;
+    float: left;
+}
+
+.divright {
+    width:300px;
+    float:right;
+}
+
+/* They are used only for gross weight and its unit*/
+.divrightsmaller {
+    width:270px;
+    float:left;
+}
+.divrightinnerleft {
+    width:135px;
+    float:left;
+}
+.divrightinnerright {
+    width:135px;
+    float:right;
+    text-align: left;
+}
+/*-----------*/
+
+/* It is only used for showing Volume output*/
+.mainvolumediv{
+    width: 510px;
+    box-sizing: border-box;
+    border-left: 1px solid #563d7c;
+    border-right: 1px solid #563d7c;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+    height: 80px;
+}
+.divvolume {
+    width:510px;
+    box-sizing: border-box;
+    border-left: 1px solid #563d7c;
+    border-right: 1px solid #563d7c;
+    text-align: center;
+}
+.divvolumeleft {
+    width:250px;
+    float:left;
+}
+.divvolumeright {
+    width:250px;
+    float:right;
+}
+/*-------------------*/
+
+/*For showing weight in kg and lb*/
+.divwtwrapper{
+    width: 260px;
+}
+.divrightWtinnerleft{
+    width:125px;
+    float:left;
+}
+.divrightWtinnerright {
+    width:125px;
+    float:right;
+}
+.divrightinnerValue {
+    width:100px;
+    float:left;
+}
+.divrightinnerText {
+    width: 25px;
+    float:right;
+}
+/*---------------*/
+
+.divinputnormal {
+    width:250px;
+}
+
+.divinputsmall {
+    width:130px;
+}
+
+.divinputsmaller {
+    width:90px;
+}
+
+.footerdiv{
+    width: 510px;
+    height: 10px;
+    border-left: 1px solid #563d7c;
+    border-right: 1px solid #563d7c;
+    border-bottom: 1px solid #563d7c;
+
+    box-sizing: border-box;
+}
+
+input:read-only{
+    background-color: #eee;
+    border: 1px solid #eee;
+}
+.selectdim{
+    width:260px;
+    height:22px;
+}
+.selectwt{
+    width:122px;
+    height: 22px;
+}
